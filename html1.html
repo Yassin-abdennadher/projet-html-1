@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>projet html1</title>
         <meta charset="UTF-8">
+
+        <title>projet html1</title>
     </head>
     <body>
         <header>
             <h1 style="text-align: center;">HTML (HyperText Markup Language)</h1>
             <nav style="text-align: center;">
-                <a href="home">home</a>
-                <a href="about">about</a>
-                <a href="work">work</a>
-                <a href="resume">resume</a>
-                <a href="contact">contact</a>    
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#work">work</a>
+                <a href="#resume">resume</a>
+                <a href="#contact">contact</a>    
             </nav>
         </header>
-        <section>
+        <section id="home">
+            <h1>HOME</h1>
             <img src="Html5.jpg" alt="image html5 non disponible" style="display: block;margin: auto;">
             <h2>En Résumé</h2>
             <ul>
@@ -47,9 +49,36 @@
                 </tr>
             </table>
         </section>
-        <footer>
+        <section id="about">
+            <h1>ABOUT</h1>
+            <img src="Html5.jpg" alt="mon image" style="display: inline-block;margin-top: -50px;">
+            <div class="description">
+                <p> Mon parcours est né d'une conviction simple : que la technologie, lorsqu'elle est bien conçue, a le pouvoir de 
+                    résoudre des problèmes complexes et d'améliorer le quotidien.  Actuellement étudiant en informatique,
+                    je me suis construit sur l'idée que la rigueur et la passion sont les piliers de tout projet réussi.  Aujourd'hui, 
+                    je maîtrise les technologies fondamentales du web comme HTML, CSS et Git, alliant un souci du détail 
+                    et une approche méthodique pour créer des interfaces claires et fonctionnelles. Au-delà de mes compétences techniques,
+                    c'est mon engagement envers l'apprentissage continu et la qualité du code qui guide chacune de mes réalisations. 
+                    Découvrez comment je peux mettre mon enthousiasme et mes connaissances au service de vos projets.
+                </p>
+            </div>
+        </section>
+        <section id="work">
+            <h1>WORK</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vAW4TxesjNc?si=jPVr8_IlonwLAoaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <audio controls>
+                <source src="myaudio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section id="resume">
+            <h1>RESUME</h1>
+        </section>
+        <section id="contact">
+            <h1>CONTACT</h1>
+        </section>
+        <footer style="text-align: center;">
             le pied de la page
         </footer>
-
     </body>
 </html>
